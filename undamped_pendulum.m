@@ -19,6 +19,9 @@ if nargin == 1
    y = t;
 end
 
-y = [y(2,:); -sin(y(1,:))];
+A = 1;
+B = 1;
+
+y = [A.*y(2,:); -B.*sin(y(1,:))];
 
 end
